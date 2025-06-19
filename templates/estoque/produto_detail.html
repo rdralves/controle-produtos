@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalhes do Produto{% endblock %}
+
+{% block content %}
+<h2>{{ object.descricao }}</h2>
+<ul class="list-group">
+    <li class="list-group-item"><strong>Referência:</strong> {{ object.ref_produto }}</li>
+    <li class="list-group-item"><strong>Quantidade:</strong> {{ object.quantidade }}</li>
+    <li class="list-group-item"><strong>Valor:</strong> {{ object.valor }}</li>
+    <li class="list-group-item"><strong>Data Entrada:</strong> {{ object.data_entrada }}</li>
+</ul>
+<a href="{% url 'produto_list' %}" class="btn btn-secondary mt-3">Voltar</a>
+{% endblock %}

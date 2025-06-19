@@ -4,6 +4,7 @@
 
 {% block content %}
 <h2>Lista de Produtos</h2>
+<a href="{% url 'produto_create' %}" class="btn btn-success mb-3">Novo Produto</a>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -11,7 +12,7 @@
             <th>Descrição</th>
             <th>Quantidade</th>
             <th>Valor</th>
-            <th>Data Entrada</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -21,7 +22,11 @@
             <td>{{ produto.descricao }}</td>
             <td>{{ produto.quantidade }}</td>
             <td>{{ produto.valor }}</td>
-            <td>{{ produto.data_entrada }}</td>
+            <td>
+                <a href="{% url 'produto_detail' produto.pk %}" class="btn btn-info btn-sm">Ver</a>
+                <a href="{% url 'produto_update' produto.pk %}" class="btn btn-warning btn-sm">Editar</a>
+                <a href="{% url 'produto_delete' produto.pk %}" class="btn btn-danger btn-sm">Excluir</a>
+            </td>
         </tr>
         {% empty %}
         <tr>
