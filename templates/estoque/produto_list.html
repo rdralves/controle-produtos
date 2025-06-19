@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Produtos{% endblock %}
+
+{% block content %}
+<h2>Lista de Produtos</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Referência</th>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+            <th>Data Entrada</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for produto in produtos %}
+        <tr>
+            <td>{{ produto.ref_produto }}</td>
+            <td>{{ produto.descricao }}</td>
+            <td>{{ produto.quantidade }}</td>
+            <td>{{ produto.valor }}</td>
+            <td>{{ produto.data_entrada }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5">Nenhum produto cadastrado.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
