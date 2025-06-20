@@ -1,5 +1,5 @@
 
-✅ 1. README.md Poderoso e Explicativo
+✅ 1. README.md 
 
 Aqui está uma sugestão detalhada, clara e profissional para o seu README.md. Copie e cole no seu arquivo README.md no GitHub:
 
