@@ -53,24 +53,6 @@ python manage.py runserver
 
 Acesse em: http://localhost:8000
 
-🚀 Deploy em Produção (Railway)
-
-Este projeto está preparado para deploy rápido e fácil no Railway:
-
-Crie uma conta gratuita no Railway.
-Conecte seu repositório GitHub.
-Configure as variáveis de ambiente (SECRET_KEY, DEBUG, ALLOWED_HOSTS, DATABASE_URL).
-Execute as migrações e crie um superusuário diretamente no terminal remoto do Railway.
-📊 Relatórios e Exportação Excel
-Acesse relatórios detalhados dos produtos cadastrados.
-Exporte facilmente os dados para Excel com um clique.
-🔐 Segurança e Autenticação
-Sistema seguro com autenticação obrigatória.
-Logout protegido contra ataques CSRF.
-
-
-
-
 📌 Próximos Passos (Roadmap)
  Implementar filtros avançados nos relatórios.
  Exportação para PDF.
