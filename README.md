@@ -1,8 +1,6 @@
 
 ✅ 1. README.md 
 
-Aqui está uma sugestão detalhada, clara e profissional para o seu README.md. Copie e cole no seu arquivo README.md no GitHub:
-
 📦 Controle de Produtos - Sistema de Gestão de Estoque
 
 Este projeto é um sistema completo de gestão de estoque desenvolvido com Django, oferecendo funcionalidades robustas para controle de produtos, autenticação de usuários, relatórios detalhados e exportação de dados para Excel.
